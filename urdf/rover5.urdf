@@ -1,35 +1,10 @@
 <robot name="rover5">
-
-<!-- BASE_FOOTPRINT -->
-    <link name="base_footprint">
-        <inertial>
-            <mass value="0.0001" />
-            <origin xyz="0 0 0" />
-            <inertia ixx="0.0001" ixy="0.0" ixz="0.0"
-                     iyy="0.0001" iyz="0.0" 
-                     izz="0.0001" />
-        </inertial>
-        <visual>
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <geometry>
-                <box size="0.001 0.001 0.001" />
-            </geometry>
-        </visual>
-    </link>
-    
     <!-- BASE_LINK -->
     <link name="base_link">
          <visual>
-					<origin xyz="0 0 0" rpy="0 0 0" />
-      		<geometry>
-        		<mesh filename="package://rover5/meshes/rover5.stl"  scale="0.001 0.001 0.001"/>
-      		</geometry>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+            <mesh filename="package://rover5/meshes/rover5.stl"  scale="0.001 0.001 0.001"/>
+          </geometry>
         </visual>    
     </link>
-
-    <joint name="base_footprint_joint" type="fixed">
-		<origin xyz="0 0 0" rpy="0 0 0" />
-        <parent link="base_footprint"/>
-        <child link="base_link" />
-    </joint>
- </robot>
