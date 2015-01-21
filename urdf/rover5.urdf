@@ -1,10 +1,11 @@
 <robot name="rover5">
-    <!-- BASE_LINK -->
-    <link name="base_link">
-         <visual>
-          <origin xyz="0 0 0" rpy="0 0 0" />
-          <geometry>
-            <mesh filename="package://rover5/meshes/rover5.stl"  scale="0.001 0.001 0.001"/>
-          </geometry>
-        </visual>    
-    </link>
+  <!-- BASE_LINK -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="-0.1225 0.1555 0.074" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover5/meshes/rover5.stl"  scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
